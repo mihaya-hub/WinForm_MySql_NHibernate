@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-cascade="none">
+  <class name="WinForm_MySql_NHibernate.Student, WinForm_MySql_NHibernate" table="student">
+    <id name="no" column="no" type="Int32">
+      <generator class="assigned" />
+    </id>
+    <property name="grade" column="grade" type="Int32"/>
+    <property name="cclass" column="cclass" type="Int32"/>
+    <property name="name" column="name"/>
+    <property name="score" column="score"/>
+  </class>
+</hibernate-mapping>
